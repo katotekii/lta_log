@@ -35,7 +35,7 @@ CreateThread(function()
             local coords = GetEntityCoords(PlayerPedId())
             local distance = #(coords - v.coords )
             if distance < 50.0 then
-                local text = ('%s has left server\nId: %s\nReason: %s'):format(v.name, v.id, v.razlog)
+                local text = ('%s has left server\nId: %s\nReason: %s'):format(v.name, v.id, v.reason)
                 DrawText3Ds(v.coords.x, v.coords.y, v.coords.z, text)
             end
         end
