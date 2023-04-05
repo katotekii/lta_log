@@ -5,7 +5,7 @@ AddEventHandler('playerDropped', function(reason)
     
     data[src] = {
         id = src,
-        razlog = reason,
+        reason = reason,
         coords = GetEntityCoords(GetPlayerPed(src)),
         name = string.gsub(GetPlayerName(src),'~',''),
         timer = os.time() + 45 -- after 45 sec it disappears
